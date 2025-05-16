@@ -19,7 +19,6 @@ int main(){
     while(movimentaTorre > 0);
 
     //MOVER BISPO PARA DIAGONAL UTILIZANDO WHILE
-    printf("MOVIMENTOS PEÇA DO BISPO\n");
     while(movimentaBispo > 0){
         printf("Cima, Direita\n");
         movimentaBispo--;
@@ -28,16 +27,17 @@ int main(){
     //MOVER PEÇA RAINHA  UTILIZANDO FOR
     for(movimentaRainha=8; movimentaRainha > 0;movimentaRainha--){
         printf("Esquerda\n");
-    
+        }
     //MOVER PEÇA CAVALO USANDO LOOP ANIMHADO
     printf("\n");
+
     for(movimentaCavalo = 2 ;movimentaCavalo > 0; movimentaCavalo--){
          while (movimentaCavalo > 0){
-            printf("baixo\n");
+            printf("baixo\n");  
             movimentaCavalo--;
          }
          printf("Esquerda\n");
         }
     
     return 0;
-}
+  } 
