@@ -1,17 +1,24 @@
-
-
 // Desafio de Xadrez - MateCheck
-
-
 #include <stdio.h>
 
-int main(){
-    int movimentaTorre = 5;
-    int movimentaBispo = 5;
-    int movimentaRainha;
-    int movimentaCavalo;
+//movimento da torre para a direita 5 casas
+void moveTorre(int i){
+    if (i > 0 ){
+    printf("Direita\n");
+    moveTorre(i- 1);
+    }
+}
+//movimento da rainha para esquerda 8 casas
+void moveRainha(int i){
+if (i > 0 ){
+    printf("Escquerda\n");
+    moveRainha(i - 1);
+   }
 
-     //MOVIMENTOS PEÇA DA TORRE USANDO DO WHILE
+}
+int main(){
+
+     /*MOVIMENTOS PEÇA DA TORRE USANDO DO WHILE
      do{
         printf("Direita\n");
         movimentaTorre--;
@@ -38,6 +45,10 @@ int main(){
          }
          printf("Esquerda\n");
         }
-    
+    */
+    moveTorre(5);
+    printf("\n");
+    moveRainha(8);
+    printf("\n");
     return 0;
   } 
